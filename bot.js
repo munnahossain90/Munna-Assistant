@@ -9,6 +9,8 @@ client.on('message', message => {
     if (message.content === 'Hi') {
     	message.reply('Hello');
   	}
+    if (message.content.startsWith("ping", "hi", "Hello", "hello",)) {
+    message.channel.send("Hi! There...😉");
 });
 
 // THIS  MUST  BE  THIS  WAY
