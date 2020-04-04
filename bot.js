@@ -5,14 +5,14 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', msg => {  
-    if(message.author.bot) return;
-    if (msg.content === 'ping') {     
-        msg.reply('Pong!');   
-    } 
-   if (msg.content === 'koala') {
-        msg.reply('This is a koala!', {files:       ['https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/480px-Koala_climbing_tree.jpg']});
-    }
+client.on("message", (message) => {
+  if (message.content.startsWith("Hi")) {
+    message.channel.send("Hello!");
+  } else
+ 
+  if (message.content.startsWith("How are you")) {
+    message.channel.send("Great & fully Charged. How about you?");
+  }
 });
 
 // THIS  MUST  BE  THIS  WAY
