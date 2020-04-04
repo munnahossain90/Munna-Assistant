@@ -7,27 +7,11 @@ client.on('ready', () => {
 
 client.on('message', msg => {  
     if(message.author.bot) return;
-    if (msg.content === 'hi') {     
-        msg.reply('Hello!');   
-    }
-    if (msg.content === 'Hi') {     
-        msg.reply('Hello!');   
+    if (msg.content === 'ping') {     
+        msg.reply('Pong!');   
     } 
-    if (msg.content === 'Hello') {     
-        msg.reply('Hi!');   
-    }
-    if (msg.content === 'How are you?') {     
-        msg.reply('Great & fully Charged. How about you?');   
-    }
-    if (msg.content === 'Hello') {     
-        msg.reply('Hi!');   
-    }
-    if (msg.content === 'Bot') {     
-        msg.reply('I am a boot  always ready to Help.');   
-    }
-    
-   if (msg.content === 'Welcome') {
-        msg.reply('Good to see you.', {files:     ['https://blog.vantagecircle.com/content/images/size/w730/2019/09/welcome.png']});
+   if (msg.content === 'koala') {
+        msg.reply('This is a koala!', {files:       ['https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/480px-Koala_climbing_tree.jpg']});
     }
 });
 
